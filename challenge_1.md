@@ -52,7 +52,7 @@ Time: 980.642 ms
 
 Also, can you make your SQL run in less than 2s on a "t2.micro" free AWS instance with the below dataset?
 
-```
+``` SQL
 INSERT INTO meta VALUES (1, NULL, 'Meta 1');
 INSERT INTO meta VALUES (2, NULL, 'Meta 2');
 INSERT INTO meta VALUES (3, NULL, 'Meta 3');
