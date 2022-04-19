@@ -1,7 +1,7 @@
 # Challenge 1
 Do you know how to write SQL? Then I have a challenge for you to warm up for our Database Tutorial.
 
-Let's say I have 2 tables, table "Meta" and table "Data" according to the below diagram and SQL:
+Let's say I have 2 tables, table "Meta" and table "Data" according to the below SQL:
 
 ``` SQL
 create table meta
