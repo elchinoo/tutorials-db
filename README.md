@@ -1,2 +1,3 @@
 # tutorials-db
-This is the repo for the database tutorials
+
+This is the main repo of the Database tutorial.
