@@ -1,0 +1,32 @@
+# Treinamento em Banco de Dados
+
+Olá a todos! Espero que estejam bem! Este repo pretende ser o repositório principal dos tutoriais de banco de dados que estamos criando.
+
+O objetivo principal deste projeto é apresentar as pessoas a esse incrível novoo mundo, o "mundo dos dados". Muitas empresas, e mesmo muitas pessoas, não percebem que seu segundo ativo mais valioso são os dados (o mais valioso é você!). Por isso, eu costumo ouvir as pessoas falando coisas como "somos pequenos demais para nos preocupar com nossos dados" ou "isso é apenas o banco de dados"... Essas muitas vezes são as mesmas empresas que vazem dados importantes na web, algumas vezes tem o banco de dados comprometido por uma invasão ou uma operacão desastrosa, e em função disso acabam ficando offline por algum tempo e em situações extremas podem até mesmo "quebrar" devido aos problemas!
+
+
+Para alcançar nosso objetivo aqui nós começaremos ensinando os conceitos básicos de dados, modelos de dados e um pouco de álgebra relacional para depois evoluir para modelagem de banco de dados. Observe que neste momento não estamos tratando nada relacionado a um banco de dados específico, e tudo visto até aqui pode ser usado com qualquer banco de dados relacional do mercado (eu acredito que você já saiba mas não custa reforçar né, nós vamos utilizar PostgreSQL aqui!). Durante este primeiro curso nós também vamos ensinar o que é e como utilizar a linguagem SQL. Começaremos com instruções básicas para podermos compreender como criar relações (tabelas), como popular essas relações e como recuperar os dados contidos nelas (select). Embora eu NÃO pretenda passar por construções muito complexas neste primeiro curso (por causa das restrições de tempo), eu pretendo apresentá-los alguns conceitos intermediários como Window Functions e CTEs (common table expressions) para que você possa resolver o problema proposto neste desafio aqui[1].
+
+
+Bem, como visto, o primeiro curso é uma introdução ao mundo dos bancos de dados, por tal ele não requer nenhum conhecimento prévio de bancos de dados ou conhecimento formal de dados, facilitando a todos acompanhar o curso. Os cursos seguintes serão um pouco diferente, eles vão exigir o conhecimento adquirido no curso inicial. Se você já possui esse conhecimento, que pré-requisito, pode pular este primeiro curso!
+
+Ok, agora que temos um bom conhecimento sobre dados, modelagem, SQL e a importância de manter o banco de dados íntegro, é hora de aprender a administrar nosso banco de dados. Aqui teremos diferentes cursos com diferentes focos e também níveis de complexidade diferentes. Eu gostaria de enfatizar que isto ainda é um trabalho em andamento, mas o objetivo é ir da instalação, configuração básica, backups, ajuste e solução de problemas em uma única instância (nó isolado) e evoluir para ambientes com várias instâncias usando replicação (assíncrona e síncrona), e passando para alta disponibilidade usando ferramentas como Patroni para coordenação das instancias, pgBackRest para estratégias de backup e Percona PMM para monitoramento. Olhando essa meta parece um longo caminho a percorrer, e de fato é, mas o objetivo é que você seja capaz de instalar, configurar, solucionar problemas, otimizar… enfim, administrar um banco de dados PostgreSQL com conhecimento e confiança um ambiente de produção. 
+
+É importante mencionar aqui que, embora não pretendamos ter todo o formalismo de um texto e cursos acadêmicos, nós precisamos e vamos fazer uso de alguns conhecimentos mais "formais" digamos assim, e um exemplo disso é quando mencionamos "álgebra relacional" acima. Isso pode assustar um pouco, principalmente para quem não tem esse conhecimento prévio, mas tenha se sinta desmotivado ou desencorajado porque vamos explicar e passar todo o conheciumento necessário aqui de uma forma onde todos possamos compreender. Também tentaremos criar nosso próprio material com apostilas, exemplos, exercícios, etc, mas também tentaremos sempre citar boas referências bibliográficas e recomendo que quem possa leia as referências bibliográficas, até porque o objetivo é que conquistemos o conhecimento necessário para acompanhar os textos e livros que referenciamos durante o curso.
+
+## Como funcionará?
+
+Ok, eu sei o que vamos aprender (bem, espero que sim, se não, por favor envie qualquer dúvida ou pergunta sobre o que foi discutido acima), mas como isso funcionaria? Vai ser por vídeos? Apenas apostilas?
+
+O “programa” aqui será dividido em diferentes cursos e tentaremos torná-lo o mais sequencial e lógico possível. Dito isso, utilizaremos vídeos, aos quais tentarei fazer lives para que possamos interagir e tirar dúvidas durante as lives. Todos os vídeos serão postados em mídias sociais/stream como o Youtube e tentarei acompanhar as perguntas nos comentários dos vídeos postados. Além disso, como em qualquer treinamento formal, teremos exercícios e trabalhos de casa que você precisa resolver. É muito importante que você tente resolver todos os exercícios e desafios e caso não consiga resolver algum que você pergunte e tire as dúvidas no decorrer dos cursos!
+
+## Informações importantes
+
+Este material foi criado para ajudar a todos que querem ou precisam entrar neste maravilhoso mundo dos dados. A intenção é poder ajudar a obter uma nota melhor na universidade, talvez conseguir um emprego melhor, entrar no mercado de trabalho, ou apenas ter uma melhor compreensão de como funciona um banco de dados... enfim não importa qual seja a tua motivação mas queremos que ele seja útil e por isso precisa ser o mais correto e preciso possível. Logo, caso encontre algo incorreto, desinformação, etc, por favor nos informe! Isso ajuda a manter a qualidade deste material! Além disso, este é um trabalho colaborativo, se você tiver sugestões, material extra ou quiser traduzi-lo para sua língua materna, envie-nos um PR, ficaremos felizes em incorporá-lo!
+
+Outro ponto muito importante aqui, seja EDUCADO com todo mundo! Se você tem um conhecimento prévio ou tem facilidade no aprendizado então ajude o colega ao invés de criticar, insultar ou fazer piadas. Críticas são muito bem vindas mas procure sempre fazê-las de forma construtiva. Acreditamos que juntos podemos fazer um mundo melhor e mais igual pra todos!
+
+Dito isso, espero que todos aproveitem bastante nossa jornada juntos e nos vemos na nossa próxima live!!!
+
+
+[1] https://github.com/elchinoo/tutorials-db/blob/main/challenge_1.md 
