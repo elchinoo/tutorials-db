@@ -1,6 +1,6 @@
 # A tale of two tables: How to optimize queries (part 1)
 
-I hope you all found this challenge entertaining as I found. I will try to walk you through one of the process I like to use while trying to optimise a query. The **prologue** here isn't really needed to understand the process and it's more an attempt to entertain and thanks for the great time I had while reading the queries and understanding their ideas and what made them fast or what we could change on them to get them even faster. Enjoy the reading!
+I hope you all found this challenge entertaining as I found. I will try to walk you through one of the process I like to use while trying to optimise a query. The **prologue** here isn't really needed to understand the process and it's more an attempt to entertain and to thank all involved in this challenge for the great time I had while reading the queries and understanding their ideas and what made them fast or what we could change on them to get them even faster. Enjoy the reading!
 
 ## Index
  - [Prologue](challenge1_analysis.md#prologue)
