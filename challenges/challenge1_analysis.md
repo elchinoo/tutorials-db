@@ -332,34 +332,34 @@ WITH RECURSIVE meta_hierarchy AS (
     FROM meta m 
         JOIN meta_hierarchy ms ON ms.meta_id = m.meta_parent
 ) 
-    SELECT mh.meta_id, mh.hierarchy_name, mh.hierarchy_name, mh.meta_name, count(mo.obj_id) AS total 
+    SELECT mh.meta_id, mh.hierarchy_id, mh.hierarchy_name, mh.meta_name, count(mo.obj_id) AS total 
     FROM meta_hierarchy mh
         LEFT JOIN meta_obj mo ON mo.meta_id = mh.meta_id
-    GROUP BY mh.meta_id, mh.depth, mh.hierarchy_name, mh.hierarchy_name, mh.meta_name
+    GROUP BY mh.meta_id, mh.depth, mh.hierarchy_id, mh.hierarchy_name, mh.meta_name
     ORDER BY mh.depth, mh.meta_id;
 
- meta_id |        hierarchy_name        |        hierarchy_name        | meta_name | total 
----------+------------------------------+------------------------------+-----------+-------
-       1 | Meta 1                       | Meta 1                       | Meta 1    |     0
-       2 | Meta 2                       | Meta 2                       | Meta 2    |     0
-       3 | Meta 3                       | Meta 3                       | Meta 3    |     0
-       4 | Meta 2 -> Meta 4             | Meta 2 -> Meta 4             | Meta 4    | 31166
-       5 | Meta 3 -> Meta 5             | Meta 3 -> Meta 5             | Meta 5    | 62526
-       6 | Meta 1 -> Meta 6             | Meta 1 -> Meta 6             | Meta 6    | 62661
-       7 | Meta 1 -> Meta 7             | Meta 1 -> Meta 7             | Meta 7    | 62976
-      10 | Meta 2 -> Meta 10            | Meta 2 -> Meta 10            | Meta 10   | 62280
-      11 | Meta 3 -> Meta 11            | Meta 3 -> Meta 11            | Meta 11   | 62868
-      12 | Meta 1 -> Meta 12            | Meta 1 -> Meta 12            | Meta 12   | 62319
-      15 | Meta 1 -> Meta 15            | Meta 1 -> Meta 15            | Meta 15   | 62753
-       8 | Meta 2 -> Meta 4 -> Meta 8   | Meta 2 -> Meta 4 -> Meta 8   | Meta 8    | 62838
-       9 | Meta 1 -> Meta 7 -> Meta 9   | Meta 1 -> Meta 7 -> Meta 9   | Meta 9    | 62200
-      13 | Meta 2 -> Meta 10 -> Meta 13 | Meta 2 -> Meta 10 -> Meta 13 | Meta 13   | 62571
-      14 | Meta 2 -> Meta 4 -> Meta 14  | Meta 2 -> Meta 4 -> Meta 14  | Meta 14   | 62271
-      16 | Meta 3 -> Meta 5 -> Meta 16  | Meta 3 -> Meta 5 -> Meta 16  | Meta 16   | 62030
-      17 | Meta 1 -> Meta 12 -> Meta 17 | Meta 1 -> Meta 12 -> Meta 17 | Meta 17   | 62333
-      18 | Meta 2 -> Meta 4 -> Meta 18  | Meta 2 -> Meta 4 -> Meta 18  | Meta 18   | 62873
-      19 | Meta 2 -> Meta 10 -> Meta 19 | Meta 2 -> Meta 10 -> Meta 19 | Meta 19   | 62027
-      20 | Meta 1 -> Meta 7 -> Meta 20  | Meta 1 -> Meta 7 -> Meta 20  | Meta 20   | 31308
+  meta_id | hierarchy_id  |        hierarchy_name        | meta_name | total 
+---------+---------------+------------------------------+-----------+-------
+       1 | 1             | Meta 1                       | Meta 1    |     0
+       2 | 2             | Meta 2                       | Meta 2    |     0
+       3 | 3             | Meta 3                       | Meta 3    |     0
+       4 | 2 -> 4        | Meta 2 -> Meta 4             | Meta 4    | 31166
+       5 | 3 -> 5        | Meta 3 -> Meta 5             | Meta 5    | 62526
+       6 | 1 -> 6        | Meta 1 -> Meta 6             | Meta 6    | 62661
+       7 | 1 -> 7        | Meta 1 -> Meta 7             | Meta 7    | 62976
+      10 | 2 -> 10       | Meta 2 -> Meta 10            | Meta 10   | 62280
+      11 | 3 -> 11       | Meta 3 -> Meta 11            | Meta 11   | 62868
+      12 | 1 -> 12       | Meta 1 -> Meta 12            | Meta 12   | 62319
+      15 | 1 -> 15       | Meta 1 -> Meta 15            | Meta 15   | 62753
+       8 | 2 -> 4 -> 8   | Meta 2 -> Meta 4 -> Meta 8   | Meta 8    | 62838
+       9 | 1 -> 7 -> 9   | Meta 1 -> Meta 7 -> Meta 9   | Meta 9    | 62200
+      13 | 2 -> 10 -> 13 | Meta 2 -> Meta 10 -> Meta 13 | Meta 13   | 62571
+      14 | 2 -> 4 -> 14  | Meta 2 -> Meta 4 -> Meta 14  | Meta 14   | 62271
+      16 | 3 -> 5 -> 16  | Meta 3 -> Meta 5 -> Meta 16  | Meta 16   | 62030
+      17 | 1 -> 12 -> 17 | Meta 1 -> Meta 12 -> Meta 17 | Meta 17   | 62333
+      18 | 2 -> 4 -> 18  | Meta 2 -> Meta 4 -> Meta 18  | Meta 18   | 62873
+      19 | 2 -> 10 -> 19 | Meta 2 -> Meta 10 -> Meta 19 | Meta 19   | 62027
+      20 | 1 -> 7 -> 20  | Meta 1 -> Meta 7 -> Meta 20  | Meta 20   | 31308
 (20 rows)
 ```
 
