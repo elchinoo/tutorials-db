@@ -6,7 +6,7 @@ I hope you all found this challenge entertaining as I found. I will try to walk 
  - [Prologue](challenge1_analysis.md#prologue)
  - [Query analysis](challenge1_analysis.md#query-analysis)
     - [Query creation](challenge1_analysis.md#query-creation)
- - (References)[challenge1_analysis.md#references]
+ - [References](challenge1_analysis.md#references)
 
 ## Prologue
 
