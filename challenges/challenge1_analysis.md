@@ -1,5 +1,13 @@
 # A tale of two tables: How to optimize queries (part 1)
 
+I hope you all found this challenge entertaining as I found. I will try to walk you through one of the process I like to use while trying to optimise a query. The **prologue** here isn't really needed to understand the process and it's more an attempt to entertain and thanks for the great time I had while reading the queries and understanding their ideas and what made them fast or what we could change on them to get them even faster. Enjoy the reading!
+
+## Index
+ - [Prologue](challenge1_analysis.md#prologue)
+ - [Query analysis](challenge1_analysis.md#query-analysis)
+    - [Query creation](challenge1_analysis.md#query-creation)
+ - (References)[challenge1_analysis.md#references]
+
 ## Prologue
 
 > "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair
@@ -54,7 +62,7 @@ Tests were exhausted, restrictions imposed, datasets created, indexes measuredâ€
 
 ## Query analysis
 
-I hope you all found this challenge entertaining as I found. It was really great to see some amazing queries, discuss with their creators and see how we can achieve an impressive performance improvement without changing hardware, configuration, or the database model. We only changed the query we execute. I'm not sure if you all realised the power it gives to all of us. We came from a 2+ seconds execution time to 180ms, it is at least 11x improvement. Just stop for a moment and think how much extra hardware with the right optimization you need to add to your setup to get 11x performance improvement. This is power!!
+As said above I found this challenge very entertaining and it was really great to see some amazing DBAs creating their queries, discuss with them and see how we can achieve an impressive performance improvement without changing hardware, configuration, or the database model. We only changed the query we execute. I'm not sure if you all realised the power it gives to all of us. We came from a 2+ seconds execution time to 180ms, it is at least 11x improvement. Just stop for a moment and think how much extra hardware with the right optimization you need to add to your setup to get 11x performance improvement. This is power!!
 
 Ok, too much talk, let's see one of the approaches I like to use to optimize a query. Pay attention to the expression **one of the approaches**, because this is just that, one of different approaches we can use, meaning there are others (seems obvious but I wanted to make sure I said that!).
 
@@ -360,8 +368,6 @@ Great! We have our report. I'll stop here for now as it is already too long. We'
 
 ## References
 
-[[1] [Dickens, Charles: A Tale of Two Cities]](https://gutenberg.org/ebooks/98)
-
-[[2] [CTE in SQL]](https://www.geeksforgeeks.org/cte-in-sql/)
-
-[[3] PostgreSQL CTE](https://www.postgresql.org/docs/current/queries-with.html)
+[[1] [Dickens, Charles: A Tale of Two Cities]](https://gutenberg.org/ebooks/98) <br>
+[[2] [CTE in SQL]](https://www.geeksforgeeks.org/cte-in-sql/) <br>
+[[3] PostgreSQL CTE](https://www.postgresql.org/docs/current/queries-with.html) <br>
