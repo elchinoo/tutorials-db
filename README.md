@@ -8,7 +8,8 @@ You can collaborate with this project helping to translate and/or with reviews. 
 
 You can find below the currently available translations.
 
-- [Brazilian Portuguese (Português Brasileiro)](https://github.com/elchinoo/tutorials-db/blob/main/README_PT-BR.md)
+- [Português Brasileiro (Brazilian Portuguese)](README_PT-BR.md)
+- [中文 (Chinese)](README_CN.md)
 
 ## Project goals
 
