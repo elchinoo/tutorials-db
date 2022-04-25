@@ -49,7 +49,7 @@ create table meta_obj
 Time: 980.642 ms
 ```
 
-此外，您的 SQL 可以在免费的 AWS “t2.micro” 上在 2 秒中内执行完成吗？
+此外，您的 SQL 可以在免费的 AWS “t2.micro” 上 2 秒中内执行完成吗？
 
 ``` SQL
 INSERT INTO meta VALUES (1, NULL, 'Meta 1');
