@@ -21,7 +21,7 @@ create table meta_obj
 );
 ```
 
-我如何仅使用一条 SQL 命令得到下面的结果？ 
+如何仅使用一条 SQL 命令得到下面的结果？ 
 ```
  meta_id | hierarchy_id   |        hierarchy_name         | meta_name | num_data 
 ---------+----------------+-------------------------------+-----------+----------
