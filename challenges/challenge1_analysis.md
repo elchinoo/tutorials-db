@@ -363,7 +363,7 @@ WITH RECURSIVE meta_hierarchy AS (
 (20 rows)
 ```
 
-Great! We have our report. I'll stop here for now as it is already too long. We'll keep this journey on part 2 of this post, describing how we can start from the query we have and optimize it! See ya in the next post ;)
+Great! We have our report. I'll stop here for now as it is already too long. We'll keep this journey on part 2 of this post, describing how we can start from the query we have and optimize it. We'll also check the proposed index, the other queries and how they all work. Stay tuned and see ya in the next post ;)
 
 
 ## References
