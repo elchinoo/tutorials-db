@@ -79,3 +79,7 @@ INSERT INTO meta_obj SELECT x, (random() * 16 + 4)::integer, 'Object ' || x, ('{
 What about make it run in less than 1 second? 
 
 I'm looking forward to your SQL!!!
+
+## Analisys
+
+You can find the analysis of this challenge with some answer [here](challenge1_analysis.md). Enjoy the reading!
